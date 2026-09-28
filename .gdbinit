@@ -6,6 +6,7 @@
 # add-auto-load-safe-path /home/francois/Documents/zzz__PersonalProjects/MapleKernel/src
 add-auto-load-safe-path /home/francois/Documents/zzz__PersonalProjects/MapleKernel/src/.gdbinit
 add-auto-load-safe-path /home/francois/Documents/zzz__PersonalProjects/MapleKernel/src64_hack/.gdbinit
+add-auto-load-safe-path /home/francois/Documents/zzz__PersonalProjects/STM32/STMKernel/src
 
 
 define rk32
@@ -29,11 +30,12 @@ end
 
 
 define activate_dashboard 
-	source /usr/share/gdb-dashboard/.gdbinit
+	# source /usr/share/gdb-dashboard/.gdbinit
+	source /home/francois/.config/gdb/gdb-dashboard/.gdbinit
 end
 
 # Use Intel syntax for disassembly
-set disassembly-flavor intel
+# set disassembly-flavor intel
 
 # Pretty print complex data structures
 set print pretty on
